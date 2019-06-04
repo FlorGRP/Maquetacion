@@ -1,0 +1,89 @@
+/* Reglas de reseteo
+Para que los margenes se cuenten para adentro. Utilizo el selector universal*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Para ordenar las cosas*/
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /*y usar padding a los costados*/
+    padding: 16px 200px;
+    background-color: #ff5959;
+}
+
+h1 , a{
+    color:white;
+}
+
+a{
+    text-decoration: none;
+    margin-left: 16px;
+}
+
+/*
+IMAGENES DE CONTENIDO
+<img src="url" alt="mini descripcion de la imagen" title="mensaje que se ve
+cuando el cursor esta encima">
+
+IMAGENES SECUNDARIAS
+Imagenes de decoracion: tramas, fondos, iconos, etc.
+
+background-image: url("")
+
+
+
+
+
+
+*/
+#banner{
+    height:300px;
+    background-image: url("fondo.jpg");
+    background-size: cover  ;
+    background-repeat: no-repeat; 
+    display: flex;
+    align-items: center;
+    padding: 0 200px;
+    
+    /*
+    X:left-center-right
+    Y:top-center-bottom
+    */
+    
+    /*background-position:*/
+
+}
+#banner > div{
+    width: 300px;
+    background-color:rgba(255, 255, 255, 0.5);
+    padding: 16px;
+}
+
+#banner>div h2{
+    color: #ff5959;
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-shadow:1px 1px 1px rgba(0, 0, 0, 0.75)
+}
+
+#servicios{
+    height:300px;
+    background-color: white;
+    display:flex;
+    flex-direction: column;
+}
+#servicios>h2{
+    color:black;
+    font-size:20px;
+    text-align: center;
+
+}
+
+.padre{
+    display: flex;
+    justify-content:space-around;
+}
